@@ -1,4 +1,5 @@
 import Logo from "@/assets/Logo.png";
+import Link from "@/scenes/navbar/Link";
 
 type Props = {
     isTopOfPage: boolean;
@@ -22,10 +23,27 @@ const Navbar = (props: Props) => {
                         {/* RIGHT SIDE */}
                         <div className={`${flexBetween} w-full`}>
                             <div className={`${flexBetween} gap-8 text-sm`}>
-                                <p>Home</p>
-                                <p>Benefits</p>
-                                <p>Our Classes</p>
-                                <p>Contact Us</p>
+                                <Link
+                                    page="Home"
+                                    selectedPage={selectedPage}
+                                    setSelectedPage={setSelectedPage}
+                                />
+                                <Link
+                                    page="Benefits"
+                                    selectedPage={selectedPage}
+                                    setSelectedPage={setSelectedPage}
+                                />
+                                <Link
+                                    page="Our Classes"
+                                    selectedPage={selectedPage}
+                                    setSelectedPage={setSelectedPage}
+                                />
+                                <Link
+                                    page="Contact Us"
+                                    selectedPage={selectedPage}
+                                    setSelectedPage={setSelectedPage}
+                                />
+
                             </div>
                             <div className={`${flexBetween} gap-8`}>
                                 <p>Sign In</p>
