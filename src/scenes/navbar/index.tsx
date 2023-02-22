@@ -2,7 +2,6 @@ import Logo from "@/assets/Logo.png";
 import Link from "@/scenes/navbar/Link";
 
 type Props = {
-    isTopOfPage: boolean;
     selectedPage: SelectedPage;
     setSelectedPage: (value: SelectedPage) => void;
 };
