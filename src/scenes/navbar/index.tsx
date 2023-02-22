@@ -1,5 +1,6 @@
 import Logo from "@/assets/Logo.png";
 import Link from "@/scenes/navbar/Link";
+import {SelectedPage} from "@/shared/types";
 
 type Props = {
     selectedPage: SelectedPage;
